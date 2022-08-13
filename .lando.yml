@@ -1,0 +1,14 @@
+name: laravel-test
+
+recipe: laravel
+
+config:
+  php: 8.1
+  via: nginx
+  webroot: public
+
+services:
+  appserver:
+    overrides:
+      volumes:
+        - ./secrets:/run/secrets
