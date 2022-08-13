@@ -2,11 +2,14 @@
 
 namespace App\Console;
 
+use App\Bootstrap\LoadsExtendedEnvironmentVariables;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
+    use LoadsExtendedEnvironmentVariables;
+
     /**
      * Define the application's command schedule.
      *

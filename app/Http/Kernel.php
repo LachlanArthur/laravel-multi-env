@@ -2,10 +2,13 @@
 
 namespace App\Http;
 
+use App\Bootstrap\LoadsExtendedEnvironmentVariables;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
+    use LoadsExtendedEnvironmentVariables;
+
     /**
      * The application's global HTTP middleware stack.
      *
